@@ -4,7 +4,13 @@ function put (id) {
     if (b.innerHTML != '=')
         tab.push(b.innerHTML);
     if (b.innerHTML == '=')
-        document.getElementById('par').innerHTML = eval(tab.join(' '));
+        document.getElementById('par').innerHTML = eval(tab.join(''));
+    else if (b.innerHTML == 'C')
+    {
+        tab.splice(0, tab.length);
+        tab.push(0);
+        document.getElementById('par').innerHTML = '';
+    }
     else
         document.getElementById('par').innerHTML = document.getElementById('par').innerHTML + b.innerHTML;
 }
