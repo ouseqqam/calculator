@@ -8,7 +8,6 @@ function put (id) {
     else if (b.innerHTML == 'C')
     {
         tab.splice(0, tab.length);
-        tab.push(0);
         document.getElementById('par').innerHTML = '';
     }
     else
