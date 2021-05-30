@@ -1,4 +1,5 @@
 var tab = [];
+
 function put (id) {
     b = document.getElementById(id);
     if (b.innerHTML != '=')
@@ -7,7 +8,7 @@ function put (id) {
         document.getElementById('par').innerHTML = eval(tab.join(''));
     else if (b.innerHTML == 'C')
     {
-        tab.splice(0, tab.length);
+        tab.splice(0, tab.length - 1);
         document.getElementById('par').innerHTML = '';
     }
     else
